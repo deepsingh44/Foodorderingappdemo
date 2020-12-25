@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imagehere"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/layer" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imagehere"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/productname"
+            style="@style/marginleftorright20"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Product Name"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/productprice"
+            style="@style/marginleftorright20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Price"
+            android:inputType="numberDecimal"
+            android:padding="20dp" />
+
+        <EditText
+            android:id="@+id/productquantity"
+            style="@style/marginleftorright20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Quantity"
+            android:inputType="number"
+            android:padding="20dp" />
+
+        <LinearLayout
+            style="@style/marginleftorright20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/datetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:text="Select Date" />
+
+            <ImageView
+                android:id="@+id/dateimage"
+                style="@style/marginleftorright20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_menu_send" />
+
+        </LinearLayout>
+
+        <Button
+            style="@style/marginleftorright20"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Product"
+            android:id="@+id/btn"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
